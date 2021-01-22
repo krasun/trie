@@ -1,4 +1,6 @@
 # trie
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkrasun%2Ftrie.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkrasun%2Ftrie?ref=badge_shield)
+
 
 A missing [Trie](https://en.wikipedia.org/wiki/Trie) implementation for Go. 
 
@@ -46,3 +48,6 @@ t.Exists("google.com") // true
 
 trie is released under [the MIT license](LICENSE).
 
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkrasun%2Ftrie.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkrasun%2Ftrie?ref=badge_large)
