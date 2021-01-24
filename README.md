@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.com/krasun/trie.svg?branch=main)](https://travis-ci.com/krasun/trie)
+[![codecov](https://codecov.io/gh/krasun/trie/branch/main/graph/badge.svg?token=rh8BDdHc2v)](https://codecov.io/gh/krasun/trie)
+[![Go Report Card](https://goreportcard.com/badge/github.com/krasun/trie)](https://goreportcard.com/report/github.com/krasun/trie)
+[![GoDoc](https://godoc.org/https://godoc.org/github.com/krasun/trie?status.svg)](https://godoc.org/github.com/krasun/trie)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkrasun%2Ftrie.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkrasun%2Ftrie?ref=badge_shield)
+---
 # trie
 
 A missing [Trie](https://en.wikipedia.org/wiki/Trie) implementation for Go. 
@@ -20,10 +26,10 @@ t := trie.New() // or trie.NewRuneTrie()
 t.Insert("apple")
 t.Insert("banana")
 
-t.Exists("apple") // true
-t.Exists("app") // false
-t.Exists("banana") // true
-t.Exists("ban") // false
+t.Contains("apple") // true
+t.Contains("app") // false
+t.Contains("banana") // true
+t.Contains("ban") // false
 ```
 
 ### A domain-optimized trie
@@ -36,10 +42,10 @@ t := trie.NewDomainTrie()
 t.Insert("apple.com")
 t.Insert("google.com")
 
-t.Exists("apple.com") // true
-t.Exists(".com") // false
-t.Exists("mail.google.com") // false
-t.Exists("google.com") // true
+t.Contains("apple.com") // true
+t.Contains(".com") // false
+t.Contains("mail.google.com") // false
+t.Contains("google.com") // true
 ```
 
 ## License 
