@@ -1,10 +1,10 @@
+# trie
+
 [![Build Status](https://travis-ci.com/krasun/trie.svg?branch=main)](https://travis-ci.com/krasun/trie)
 [![codecov](https://codecov.io/gh/krasun/trie/branch/main/graph/badge.svg?token=rh8BDdHc2v)](https://codecov.io/gh/krasun/trie)
 [![Go Report Card](https://goreportcard.com/badge/github.com/krasun/trie)](https://goreportcard.com/report/github.com/krasun/trie)
 [![GoDoc](https://godoc.org/https://godoc.org/github.com/krasun/trie?status.svg)](https://godoc.org/github.com/krasun/trie)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkrasun%2Ftrie.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkrasun%2Ftrie?ref=badge_shield)
----
-# trie
 
 A missing [Trie](https://en.wikipedia.org/wiki/Trie) implementation for Go. 
 
@@ -46,6 +46,15 @@ t.Contains("apple.com") // true
 t.Contains(".com") // false
 t.Contains("mail.google.com") // false
 t.Contains("google.com") // true
+```
+
+### A goroutine-safe (thread-safe) trie
+
+You can wrap any trie into the safe version by: 
+```
+safeTrie := trie.Safe(trie.NewDomainTrie())
+
+// the same interface as for a regular trie
 ```
 
 ## License 
