@@ -50,8 +50,9 @@ t.Contains("google.com") // true
 
 ### A goroutine-safe (thread-safe) trie
 
-You can wrap any trie into the safe version by: 
-```
+By default rune-wise and domain-optimized tries are not safe to use 
+concurrently, but it is easy to make them safe. You can wrap any trie into the safe version by: 
+```go
 safeTrie := trie.Safe(trie.NewDomainTrie())
 
 // the same interface as for a regular trie
