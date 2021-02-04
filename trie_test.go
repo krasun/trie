@@ -2,11 +2,6 @@ package trie
 
 import "testing"
 
-// to prevent compiler optimizations, all benchmark results are stored
-// in the package-level variable
-var benchmarkResult bool
-var benchmarkSetResult map[string]struct{}
-
 func TestNew(t *testing.T) {
 	trie := New()
 

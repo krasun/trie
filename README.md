@@ -35,6 +35,8 @@ t.Contains("banana") // true
 t.Contains("ban") // false
 
 t.SearchByPrefix("a") // []string{"apple", "alphabet"}
+
+t.StartsWith("a") // true
 ```
 
 ### A goroutine-safe (thread-safe) trie

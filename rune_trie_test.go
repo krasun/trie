@@ -6,6 +6,11 @@ import (
 	"testing"
 )
 
+// to prevent compiler optimizations, all benchmark results are stored
+// in the package-level variable
+var benchmarkResult bool
+var benchmarkSetResult map[string]struct{}
+
 var words = []string{
 	"c", "ce", "banana", "app", "aple", "ban", "apple1", "aaapple",
 	"1c", "1ce", "1banana", "1app", "1aple", "1ban", "1apple1", "1aaapple",

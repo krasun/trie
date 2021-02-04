@@ -8,7 +8,7 @@ import (
 func TestSafeTrieContains(t *testing.T) {
 	trie := Safe(NewRuneTrie())
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 100; i++ {
 		trie.Insert("c")
 		trie.Insert("apple")
 		trie.Insert("banana")
@@ -31,7 +31,7 @@ func TestSafeTrieContains(t *testing.T) {
 		{"aple", false},
 		{"ban", false},
 		{"apple", true},
-		{"apple25", false},
+		{"apple125", false},
 		{"aaapple", false},
 	}
 
