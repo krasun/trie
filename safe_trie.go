@@ -34,3 +34,29 @@ func (st *safeTrie) Contains(word string) bool {
 
 	return st.t.Contains(word)
 }
+
+// StartsWith returns true if there is any word in the trie that starts
+// with the given prefix.
+func (st *safeTrie) StartsWith(prefix string) bool {
+	st.mu.RLock()
+	defer st.mu.RUnlock()
+
+	return st.t.StartsWith(prefix)
+}
+
+
+// Finds and returns words by prefix.
+func (st *safeTrie) SearchByPrefix(prefix string) []string {
+	st.mu.RLock()
+	defer st.mu.RUnlock()
+
+	return st.t.SearchByPrefix(prefix)
+}
+
+// Size returns the number of keys in the tree.
+func (st *safeTrie) Size() int {
+	st.mu.RLock()
+	defer st.mu.RUnlock()
+
+	return st.t.Size()
+}
