@@ -6,7 +6,7 @@
 [![GoDoc](https://godoc.org/https://godoc.org/github.com/krasun/trie?status.svg)](https://godoc.org/github.com/krasun/trie)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkrasun%2Ftrie.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkrasun%2Ftrie?ref=badge_shield)
 
-A missing [Trie](<link to scalable developer>) implementation for Go. 
+A missing [trie](https://en.wikipedia.org/wiki/Trie) implementation for Go. 
 
 ## Installation
 
