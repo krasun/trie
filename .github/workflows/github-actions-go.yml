@@ -1,6 +1,25 @@
-steps:
-  - uses: actions/checkout@v2
-  - uses: actions/setup-go@v2
-    with:
-      go-version: '^1.13.1' # The Go version to download (if necessary) and use.
-  - run: go version
+name: Go
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.11
+
+    - name: Build
+      run: go build -v .
+
+    - name: Test
+      run: go test -v . -race
