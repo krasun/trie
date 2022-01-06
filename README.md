@@ -1,6 +1,6 @@
 # trie
 
-[![Build Status](https://app.travis-ci.com/krasun/trie.svg?branch=main)](https://app.travis-ci.com/krasun/trie)
+[![Build Status]](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/build/badge.svg)
 [![codecov](https://codecov.io/gh/krasun/trie/branch/main/graph/badge.svg?token=rh8BDdHc2v)](https://codecov.io/gh/krasun/trie)
 [![Go Report Card](https://goreportcard.com/badge/github.com/krasun/trie)](https://goreportcard.com/report/github.com/krasun/trie)
 [![GoDoc](https://godoc.org/https://godoc.org/github.com/krasun/trie?status.svg)](https://godoc.org/github.com/krasun/trie)
